@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  body {
+    @apply text-white bg-primaryColor tracking-wider;
+  }
+  section {
+    @apply pt-16 pb-4 md:pt-20;
+  }
+}
+@layer components {
+  .btn {
+    @apply inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200;
+  }
+
+  .btn-primary {
+    @apply text-blackColor bg-secondaryColor hover:opacity-75;
+  }
+  .btn-primaryColorLight {
+    @apply text-whiteColor bg-primaryColorLight hover:opacity-75;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .home__title,
+  .card__title,
+  .section__title {
+    @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
+  }
+
+  .section__title {
+    @apply text-3xl;
+  }
+
+  .card__title {
+    @apply text-xl;
+  }
+
+  .separator {
+    @apply w-28 h-[2px] bg-secondaryColor my-5;
+  }
+
+  .paragraph {
+    @apply text-paragraphColor text-xs leading-5;
+  }
+}
+
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+  @apply bg-secondaryColor text-blackColor;
 }
