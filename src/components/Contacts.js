@@ -10,12 +10,18 @@ const Contacts = () => {
           <p className="text-sm">Ask anything to feel free to ask!</p>
         </div>
         <div className=" flex flex-col md:flex-row md:flex-1 gap-3">
-          <input type="text" placeholder="Email address"  className=" p-2 text-black outline-none rounded-lg md:w-full"/>
-          <div className=" relative">
-            <button className=" bg-black ">Subscribe</button>
-            <i className=" absolute top-0 left-0">
-              <FaPaperPlane />
-            </i>
+          <input
+            type="text"
+            placeholder="Email address"
+            className=" p-2 text-black outline-none rounded-lg md:w-full"
+          />
+          <div className="">
+            <button className=" bg-black flex items-center justify-center gap-2 btn w-full hover:opacity-75 ">
+              <i>
+                <FaPaperPlane />
+              </i>
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
