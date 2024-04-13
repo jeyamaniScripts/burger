@@ -4,7 +4,6 @@ import {
   FaFacebook,
   FaInstagram,
   FaMailBulk,
-  FaMailchimp,
   FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
