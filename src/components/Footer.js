@@ -20,7 +20,7 @@ const Footer = () => {
                   <p className="text-4xl uppercase font-oswald">
                     bur<span className=" text-secondaryColor">ger</span>
                   </p>
-                  <p className=" text-sm">
+                  <p className=" text-xs mt-3">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Optio molestias tenetur hic possimus harum ullam amet,
                     excepturi exercitationem earum aut nemo fugit minima nisi
